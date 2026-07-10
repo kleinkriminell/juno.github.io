@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untitled.txt</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="editor">
+
+        <div class="titlebar">
+            untitled.txt
+        </div>
+
+        <div class="menubar">
+            Datei&nbsp;&nbsp;Bearbeiten&nbsp;&nbsp;Ansicht&nbsp;&nbsp;Hilfe
+        </div>
+
+        <div class="document">
+Hallo.
+
+Willkommen auf meiner Website.
+
+Ich möchte, dass sie sich anfühlt wie
+ein einfacher Texteditor.
+
+Hier wird später mein Portfolio stehen.
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+Dazu brauchst du eine style.css, damit es nicht nur wie normaler Text aussieht. Zum Beispiel:
+
+body{
+    margin:0;
+    background:#dcdcdc;
+    font-family:monospace;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+}
+
+.editor{
+    width:700px;
+    background:white;
+    border:1px solid #888;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.titlebar{
+    background:#efefef;
+    padding:8px 12px;
+    border-bottom:1px solid #bbb;
+    font-weight:bold;
+}
+
+.menubar{
+    padding:6px 12px;
+    border-bottom:1px solid #ddd;
+}
+
+.document{
+    padding:20px;
+    min-height:400px;
+    white-space:pre-wrap;
+    line-height:1.6;
+}
